@@ -24,5 +24,21 @@ console.log(results); // so filter goes through one element at a time and
 //and runs a condition on each element. If condition is true -> element is kept
 //if false -> element is removed and returns a new array.
 
+// Spread Operator (...)
 
+const fruits1 = ['Apple','Melon','Strawberry','Dragonfruit']
 
+const newFruits = ['Blue berry', ...fruits1, 'Tomato']
+
+console.log(newFruits);
+
+const userName = {
+    name : 'Muktesh',
+    age : 20
+};
+
+console.log(userName);
+
+const copy = {...userName}
+
+console.log(copy);
