@@ -20,5 +20,9 @@ fruits.unshift('Mango')
 
 results = fruits.filter(fruits => fruits.length > 5);
 
-console.log(results);
+console.log(results); // so filter goes through one element at a time and
+//and runs a condition on each element. If condition is true -> element is kept
+//if false -> element is removed and returns a new array.
+
+
 
