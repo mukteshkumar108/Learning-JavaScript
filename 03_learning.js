@@ -4,3 +4,21 @@
 
 const fruits = ['Apple','Banana','Guava','Pear']
 
+// Some array methods
+
+fruits.push('Watermelon'); //this add items to an array
+
+fruits.pop(); //removes the last item
+
+fruits.shift() //removes the first item
+
+fruits.unshift('Mango')
+
+//const results = fruits.map(fruits => fruits.toUpperCase());
+
+//map() method changes or transforms the array and doen't change the original array
+
+results = fruits.filter(fruits => fruits.length > 5);
+
+console.log(results);
+
