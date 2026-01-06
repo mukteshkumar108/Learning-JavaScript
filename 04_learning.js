@@ -24,3 +24,9 @@ console.log(str.endsWith("engineer"));
 
 console.log(str.slice(8, 10));
 // "is"
+
+str.split(" ");
+// ["Muktesh", "is", "top", "1%", "software", "engineer"]
+
+str.split("%");
+// ["Muktesh is top 1", " software engineer"]
