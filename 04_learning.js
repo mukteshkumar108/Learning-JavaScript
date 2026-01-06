@@ -25,8 +25,13 @@ console.log(str.endsWith("engineer"));
 console.log(str.slice(8, 10));
 // "is"
 
-str.split(" ");
+console.log(str.split(" "));
 // ["Muktesh", "is", "top", "1%", "software", "engineer"]
 
-str.split("%");
+console.log(str.split("%"));
 // ["Muktesh is top 1", " software engineer"]
+
+let s = "   Muktesh is top 1% software engineer   ";
+
+console.log(s.trim());
+// "Muktesh is top 1% software engineer"
