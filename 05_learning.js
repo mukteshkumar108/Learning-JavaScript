@@ -15,3 +15,12 @@ console.log(str); // unchanged
 let arr = [1, 2, 3];
 arr.push(4);
 console.log(arr); // changed
+
+// Day 7 – Shallow Copy in JavaScript
+
+let a = { name: "Muktesh" };
+let b = a;
+
+b.name = "Developer";
+
+console.log(a.name); // Developer
