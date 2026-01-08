@@ -51,3 +51,12 @@ nums.forEach(n => console.log(n * 2));
 
 let doubled = nums.map(n => n * 2);
 console.log(doubled);
+
+// Array push vs concat
+let a = [1, 2];
+a.push(3);          // mutates
+let b = a.concat(4); // new array
+
+// Use push() when modifying the same array is OK
+
+// Use concat() when you want to keep the original array unchanged
