@@ -29,3 +29,5 @@ console.log(typeof null); // "object"
 
 console.log("hello world".split(" "));
 console.log("1,2,3".split(","));
+
+console.log([] == false); // true
