@@ -24,3 +24,8 @@ let b = a;
 b.name = "Developer";
 
 console.log(a.name); // Developer
+
+console.log(typeof null); // "object"
+
+console.log("hello world".split(" "));
+console.log("1,2,3".split(","));
