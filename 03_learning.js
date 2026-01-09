@@ -60,3 +60,15 @@ let b = a.concat(4); // new array
 // Use push() when modifying the same array is OK
 
 // Use concat() when you want to keep the original array unchanged
+
+// map vs filter
+
+const nums1 = [1,2,3,4,5];
+
+const doubled1 = nums.map(n=>n*2);
+
+const evens = nums.filter(n=> n%2 === 0);
+
+console.log(doubled1);
+
+console.log(evens);
