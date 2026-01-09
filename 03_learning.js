@@ -72,3 +72,12 @@ const evens = nums1.filter(n=> n%2 === 0);
 console.log(doubled1);
 
 console.log(evens);
+
+// some vs every
+
+const nums2 = [1,3,5,7];
+
+console.log(nums2.some(n => n % 2 === 0)); //false
+
+console.log(nums2.every(n => n > 0)); //true
+
