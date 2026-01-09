@@ -65,9 +65,9 @@ let b = a.concat(4); // new array
 
 const nums1 = [1,2,3,4,5];
 
-const doubled1 = nums.map(n=>n*2);
+const doubled1 = nums1.map(n=>n*2);
 
-const evens = nums.filter(n=> n%2 === 0);
+const evens = nums1.filter(n=> n%2 === 0);
 
 console.log(doubled1);
 
