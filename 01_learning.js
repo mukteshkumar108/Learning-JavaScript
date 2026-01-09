@@ -58,3 +58,14 @@ console.log(car1[7]); // Mazda
 // console.log(unusualPropertyNames[""]); // An empty string
 // console.log(unusualPropertyNames["!"]); // Bang!
 
+// Object.freexe()
+
+const userName2 = {
+    name: "Muktesh",
+    role: "Learner"
+};
+
+Object.freeze(userName2)
+
+user.role = "Engineer";
+console.log(user); //role change nhi hoyega
