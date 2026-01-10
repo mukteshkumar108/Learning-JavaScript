@@ -1,10 +1,12 @@
-// STRING METHODS
+// STRING METHODS 
+//strings are indexed means we can access any single character
+//of a string 
 
 let str = "Muktesh is top 1% software engineer"
 
 console.log(str.length); //length of string
 
-console.log(str[0]);
+console.log(str[0]);// accessing any string
 
 console.log(str.toUpperCase());
 
