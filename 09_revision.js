@@ -16,3 +16,5 @@ console.log(0 && 2);
 console.log(" " && 2); 
 // AND gives falsy value not false
 //just opposite of OR operator 
+
+console.log(!0); //! truthy ko falsy bana dega aur falsy ko true
