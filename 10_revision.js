@@ -13,10 +13,8 @@ console.log(`Name: ${username}`);
 console.log(`Age: ${userAge}`);
 
 if (userAge >= 18 && userAge <= 24) {
-    console.log('He is a College student.');
+    console.log(`${username} is a College student.`);
 }
 if(userAge >= 25 && userAge <= 45){
-    console.log('He is Working professional');
+    console.log(`${username} is Working professional.`);
 }
-
-
