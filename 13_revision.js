@@ -40,7 +40,9 @@ An l-value is something that:
 let numb1 = 5
 let numb2 = 5
 
-console.log(numb1++);
+console.log(numb1++);// 5
 //yeh result deta nhi pehle lekin variable mein value update kardeta hai
+console.log(numb1);// 6
+
 console.log(++numb2);
 //isme value pehle hi update karke de deta hai
