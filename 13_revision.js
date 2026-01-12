@@ -36,3 +36,11 @@ An l-value is something that:
 // ● Assignment requires a target
 // ● A target must be an l-value
 
+// ++ increment operator
+let numb1 = 5
+let numb2 = 5
+
+console.log(numb1++);
+//yeh result deta nhi pehle lekin variable mein value update kardeta hai
+console.log(++numb2);
+//isme value pehle hi update karke de deta hai
