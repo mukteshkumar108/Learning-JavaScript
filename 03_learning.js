@@ -81,3 +81,33 @@ console.log(nums2.some(n => n % 2 === 0)); //false
 
 console.log(nums2.every(n => n > 0)); //true
 
+// Less efficient approach
+function findDuplicates(arr) {
+    let duplicates = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] === arr[j] && !duplicates.includes(arr[i])) {
+                duplicates.push(arr[i]);
+            }
+        }
+    }
+    return duplicates;
+}
+
+// More efficient approach using critical thinking
+function findDuplicatesOptimized(arr) {
+    let seen = new Set();
+    let duplicates = new Set();
+    for (let num of arr) {
+        if (seen.has(num)) {
+            duplicates.add(num);
+        } else {
+            seen.add(num);
+        }
+    }
+    return Array.from(duplicates);
+}
+
+// the code above is copied from somewhere right now that code is totally unique for me 
+// making me think how did developer make such a good code cut to chase code little tricky for me to understand
+// maybe need little more knowledge about arrays which is not enough to understand this code
