@@ -23,3 +23,23 @@ console.log(hasAdmin);
 
 // 2️.every() — Do all elements satisfy the condition?
 
+// Are all numbers positive?
+
+const numbers1 = [2, 4, 6, 8];
+
+const allPositive = numbers1.every(num => num > 0);
+
+console.log(allPositive);
+// true
+
+// All students passed?
+const students = [
+  { name: "A", marks: 55 },
+  { name: "B", marks: 70 },
+  { name: "C", marks: 42 }
+];
+
+const allPassed = students.every(student => student.marks >= 40);
+
+console.log(allPassed);
+// true
