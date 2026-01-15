@@ -43,3 +43,19 @@ const allPassed = students.every(student => student.marks >= 40);
 
 console.log(allPassed);
 // true
+
+// 3. .find() — Find first matching element
+
+//Q: Find first expensive product
+
+const products = [
+  { name: "Pen", price: 10 },
+  { name: "Book", price: 50 },
+  { name: "Laptop", price: 50000 }
+];
+
+const expensiveProduct = products.find(p => p.price > 1000);
+
+console.log(expensiveProduct);
+// { name: "Laptop", price: 50000 }
+
