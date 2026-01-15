@@ -59,3 +59,16 @@ const expensiveProduct = products.find(p => p.price > 1000);
 console.log(expensiveProduct);
 // { name: "Laptop", price: 50000 }
 
+// 4️. .findIndex() — Find index of first match
+
+// Q Find index of inactive user
+const users3 = [
+  { name: "X", active: true },
+  { name: "Y", active: false },
+  { name: "Z", active: true }
+];
+
+const inactiveIndex = users3.findIndex(user => !user.active);
+
+console.log(inactiveIndex);
+// 1
