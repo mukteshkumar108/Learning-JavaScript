@@ -48,3 +48,15 @@ These are executed **later**, after an external operation (like a timer, file re
 
 > **Note to Future Self:** Always check if an API is sync or async before trusting the state of your variables. If you treat an async callback like a sync one, you will end up with `undefined` or stale data because you're trying to read the result before it has actually been calculated.
 */
+
+ //numbers are not objects
+
+ // Synchronous
+function doSomething(callback) {
+  callback();
+}
+
+// Asynchronous
+function doSomething(callback) {
+  setTimeout(callback, 0);
+}
