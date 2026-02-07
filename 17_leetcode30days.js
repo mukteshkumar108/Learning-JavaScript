@@ -83,4 +83,4 @@ var createHelloWorld = function() {
 const f = createHelloWorld();
 console.log(f());//Hello World
 
- 
+//  Parameters allow you to pass (send) values to a function.

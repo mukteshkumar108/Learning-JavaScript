@@ -60,3 +60,4 @@ function doSomething(callback) {
 function doSomething(callback) {
   setTimeout(callback, 0);
 }
+
