@@ -84,3 +84,31 @@ const f = createHelloWorld();
 console.log(f());//Hello World
 
 //  Parameters allow you to pass (send) values to a function.
+// () means execute now.
+// Variables declared within a JavaScript function, become LOCAL to the function.
+// Local variables can only be accessed from within the function.
+
+function myFunction() {
+  let carName = "Volvo";
+  // code here CAN use carName
+  return carName
+}
+
+let carName = myFunction()
+
+console.log(carName);
+
+// Local variables are created when a function starts, and deleted when the function is completed.
+
+// Instead of using a variable to store the return value of a function 
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+
+// let x = toCelsius(77);
+// let text = `The temperature is '+ x +' Celsius`;
+
+// You can use the function directly, as a variable value:
+
+let text = console.log("The temperature is " + toCelsius(77) + " Celsius");
