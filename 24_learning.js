@@ -7,4 +7,21 @@
 // Passing an array to new Set()
 // Create an empty set and use add() to add values
 
-const letters = new Set(["a","b","c"]);
+// const letters = new Set(["a","b","c"]);
+
+const letters = new Set();
+
+// Add Values to the Set
+letters.add("a");
+letters.add("b");
+letters.add("c");
+
+console.log(letters);
+
+//list all elements
+let text = '';
+for (const x of letters){
+    text += x;
+}
+
+console.log(text);
