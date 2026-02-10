@@ -25,3 +25,9 @@ for (const x of letters){
 }
 
 console.log(text);
+
+const letters1 = new Set(["a","b","c"]);
+
+answer = letters1.has("d");
+
+console.log(answer);
