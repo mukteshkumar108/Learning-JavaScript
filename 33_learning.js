@@ -18,3 +18,15 @@ setTimeout(() => {
 
 console.log("End");
 
+/* 2. setInterval: Same as settimeout but it runs in loop*/
+
+let count = 0;
+
+const id = setInterval(() =>{
+    count++;
+    console.log("Tick", count);
+
+    if (count === 100){
+        clearInterval(id);
+    }
+}, 1000);
