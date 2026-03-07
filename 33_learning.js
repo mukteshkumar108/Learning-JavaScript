@@ -30,3 +30,13 @@ const id = setInterval(() =>{
         clearInterval(id);
     }
 }, 1000);
+
+/* 3️⃣ Understanding execution order (Event Loop basics)*/
+
+console.log("Script Start");
+
+setTimeout(() => {
+    console.log("Timeout callback executed");
+}, 0);
+
+console.log("Script End");
