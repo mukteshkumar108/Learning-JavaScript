@@ -43,7 +43,6 @@ console.log("Script End");
 
 /* 4. Microtask Queue vs Callback Queue */
 
-
 console.log("Microtask example start");
 
 setTimeout(() => {
@@ -55,3 +54,21 @@ Promise.resolve().then(() => {
 });
 
 console.log("Microtask example end");
+
+/* 5️. Simulating async operation */
+
+function fakeAPICall() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Data received from fake API");
+        }, 1500);
+    });
+}
+
+async function fetchData() {
+    console.log("Fetching data...");
+    const data = await fakeAPICall();
+    console.log(data);
+}
+
+fetchData();
