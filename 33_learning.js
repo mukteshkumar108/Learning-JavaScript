@@ -31,7 +31,7 @@ const id = setInterval(() =>{
     }
 }, 1000);
 
-/* 3️⃣ Understanding execution order (Event Loop basics)*/
+/* 3️. Understanding execution order (Event Loop basics)*/
 
 console.log("Script Start");
 
@@ -40,3 +40,18 @@ setTimeout(() => {
 }, 0);
 
 console.log("Script End");
+
+/* 4. Microtask Queue vs Callback Queue */
+
+
+console.log("Microtask example start");
+
+setTimeout(() => {
+    console.log("Timeout task");
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log("Promise microtask");
+});
+
+console.log("Microtask example end");
