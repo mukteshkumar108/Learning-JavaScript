@@ -26,3 +26,13 @@ test();
 ● Function declarations are hoisted
 ● Only ONE GEC exists
 */
+
+console.log(a); // undefined
+
+var a = 20;
+
+function show() {
+  console.log("Inside function");
+}
+
+show();
