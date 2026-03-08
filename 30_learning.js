@@ -21,3 +21,17 @@ Every time a function is invoked, a new execution context is pushed onto the sta
 
 When function returns, its context is popped. */
 
+function multiply(a, b) {
+  return a * b;
+}
+
+function square(num) {
+  return multiply(num, num);
+}
+
+function printSquare(n) {
+  const result = square(n);
+  console.log("Square is:", result);
+}
+
+printSquare(5);
