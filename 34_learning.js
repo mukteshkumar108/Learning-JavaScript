@@ -64,5 +64,44 @@ const doubledValue = numbers.map(num => num * 5);
 
 console.log(doubledValue)
 
-//Spread operator and Rest operator might look same but are different
+//Spread operator and Rest operator might look same but are different 
+
+//Spread operator is to unpack things. You you use it when you already have an array and objects. Aur uske individual items ko
+//bahar nikal ke unko copy karna, combine karna yah function mein pass karna.
+/*When you try to copy arr1into arr2 you will get copy but problem is here that if you change data in arr2 it will also change the 
+data of arr1 */
+
+let fruits = ['Apples', 'Banana', 'Mango']; //code will crash if yuse const here
+const vegies = ['Pea', 'Potato', 'Carrot'];
+
+const shoppingList = [...vegies, ...fruits , 'Milk']
+
+console.log(shoppingList)
+
+let fruits1 = ['PineApple']
+
+fruits = fruits1
+
+console.log(fruits1)
+
+//Rest in function (Gathering Arguements)
+
+// When creating a function and you don't know how many arguements will be passed by the user then you use Rest 
+
+const dimensions = [1970, 1080, 60, 'FPS', 'Ultrawide'];
+
+const [width, height, ...otherSpecs] = dimensions; //rest is used to gather leftover arguements
+
+console.log(width);
+console.log(height);
+console.log(otherSpecs);
+
+// The ...hobbies parameter gathers all extra arguments into an array
+const showProfile = (name, ...hobbies) =>{
+    console.log(`Name: ${name}`);
+    console.log(`Hobbies Array:`, hobbies);
+    return(name , hobbies);
+}
+// 'Mukesh' goes into name. The rest get gathered into the hobbies array.
+console.log(showProfile('Muktesh', 'Cooking', 'Coding', 'Gaming'));
 
