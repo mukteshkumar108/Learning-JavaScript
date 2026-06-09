@@ -105,3 +105,36 @@ const showProfile = (name, ...hobbies) =>{
 // 'Mukesh' goes into name. The rest get gathered into the hobbies array.
 console.log(showProfile('Muktesh', 'Cooking', 'Coding', 'Gaming'));
 
+
+// Asynchronous, yaani async, ek tarika hai code likhne ka jahan tum ek operation ko complete hone ka wait kiye bina
+// doosre task ko continue kar sakte ho. Matlab, tum background mein chalne wale tasks ko wait nahi karte, balki jab 
+// tak woh complete ho, tum apne main thread ko aage badhate ho. Tumhare app mein, jaise agar tum kisi server se data 
+// fetch kar rahe ho, toh async use karoge, taaki tumhara app freeze na ho aur user baaki ka kaam karte rahe.
+
+
+// Promises ek tarah ka JavaScript object hai jo tumhe future mein ek value provide karne ka wada karta hai. Yeh teen 
+// states mein hota hai: pending (jab tak kaam ho raha hai), fulfilled (jab kaam successfully ho gaya), ya rejected 
+// (jab kuch gadbad ho gayi). Tum promises ka use karke asynchronous code ko handle karte ho, taaki tumhara code zyada 
+// readable ho jaye, aur tum "then" aur "catch" ke through yeh manage kar sako ki success ya failure mein kya hoga.
+// ".then" aur ".catch" promises ke methods hote hain. Jab promise successful ho jata hai, tumhara ".then" function 
+// chalta hai, jisme tum successful result handle karte ho. Aur agar promise reject ho jaye, toh ".catch" use karke 
+// tum error handle karte ho. Simple bhaasha mein, ".then" ka matlab hai "achha, kaam ho gaya, ab yeh karo" aur ".catch" 
+// ka matlab "arre, kuch gadbad ho gayi, ab error sambhalo!"
+
+//A function that simulates getting food 
+const orderBurger = () => {
+    return new Promise((resolve, reject) => {
+        let kitchenError = true;
+
+        if (!kitchenError){
+            resolve("🍔 Here is your hot burger!"); //success!
+        } else {
+            reject("❌ Out of ingredients!"); //failure
+        }
+    });
+};
+
+//Using the promise
+orderBurger()
+    .then(food => console.log(food))
+    .catch(err => console.log(err));
